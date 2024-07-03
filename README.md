@@ -1,2 +1,3 @@
-A sample command-line application with an entrypoint in `bin/`, library code
-in `lib/`, and example unit test in `test/`.
+## Desafios de logica de programação com DART
+
+1. Calcule a média de duas notas e mostre a média aritmética obtida. 
