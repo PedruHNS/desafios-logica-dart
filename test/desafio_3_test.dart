@@ -1,5 +1,4 @@
 //! 3 Leia dois números, efetue as 4 operações matemáticas básicas e mostre os resultados.
-import 'dart:math';
 
 import 'package:desafio_logica/desafio_3.dart';
 
