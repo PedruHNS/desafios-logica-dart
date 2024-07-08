@@ -10,11 +10,7 @@ void main() {
 
   group('Abastecer | ', () {
     test('valor a pagar', () {
-      expect(
-          gasoline.toFuel,
-          equals(
-            'R\$ 227.50',
-          ));
+      expect(gasoline.toFuel, equals('R\$ 227.50'));
     });
     test('tipo da variavel', () {
       expect(gasoline.toFuel, isA<String>());

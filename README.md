@@ -12,7 +12,7 @@
 <br>
 - [x]  6. Um motorista deseja colocar no seu tanque X reais de gasolina. Escreva um algoritmo para ler o preço do litro da gasolina e o valor do pagamento, e exiba quantos litros ele conseguiu colocar no tanque.
 <br>
-- [ ]  7. O restaurante self-service BOMPRATO cobra R$14,00 por cada quilo de refeição. Escreva um algoritmo que leia o peso do prato montado pelo cliente (em quilos) e imprima o valor a pagar. Assuma que a balança já desconta o peso do prato (tara).
+- [x]  7. O restaurante self-service BOMPRATO cobra R$14,00 por cada quilo de refeição. Escreva um algoritmo que leia o peso do prato montado pelo cliente (em quilos) e imprima o valor a pagar. Assuma que a balança já desconta o peso do prato (tara).
 <br>
 - [ ]  8. Entre com o dia e o mês de uma data e informe quantos dias se passaram desde o início do ano. Esqueça a questão dos anos bissextos e considere sempre que um mês possui 30 dias.
 - [ ]  9. Faça um algoritmo para ler três notas de um aluno em uma disciplina e imprima a sua média ponderada (as notas tem pesos respectivos de 1, 2 e 3).
