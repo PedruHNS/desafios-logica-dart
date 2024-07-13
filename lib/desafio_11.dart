@@ -14,12 +14,17 @@ class DistanciaEntrePontos {
     final a = pontoA.toString().split('.').map((e) => int.parse(e)).toList();
     final b = pontoB.toString().split('.').map((e) => int.parse(e)).toList();
 
-    return sqrt((pow((a[0] - b[0]), 2) + pow((a[1] - b[1]), 2))).toDouble();
+    var result =
+        sqrt((pow((a[0] - b[0]), 2) + pow((a[1] - b[1]), 2))).toDouble();
+
+    result = result * 100;
+
+    return result.roundToDouble() / 100;
   }
 }
 
 void main(List<String> args) {
-  final distancia = DistanciaEntrePontos(pontoA: 1.2, pontoB: 4.6);
+  final distancia = DistanciaEntrePontos(pontoA: 1.6, pontoB: 3.8);
 
   print('A distância entre os pontos é: ${distancia.calc}');
 }
