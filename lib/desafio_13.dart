@@ -1,3 +1,5 @@
+/*13. O sistema de avaliação de uma determinada disciplina é composto por três provas. A primeira prova tem peso 2, a segunda tem peso 3 e a terceira tem peso 5. Faça um algoritmo para calcular a média final de um aluno desta disciplina. */
+
 class Disciplina {
   String nome;
   double nota;

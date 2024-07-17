@@ -2,21 +2,7 @@
 10. Uma fábrica de camisetas produz os tamanhos pequeno, médio e grande, cada uma sendo vendida respectivamente por 8, 10 e 15 reais. Construa um algoritmo em que o usuário forneça a quantidade de camisetas pequenas, médias e grandes referentes a uma venda, e a máquina informe quanto será o valor arrecadado.
 */
 
-import 'dart:io';
-
-int input({required String message}) {
-  String? result;
-
-  while (result == null) {
-    print(message);
-    result = stdin.readLineSync();
-  }
-  if (result.isEmpty || int.tryParse(result) == null) {
-    return input(message: message);
-  }
-
-  return int.parse(result);
-}
+import 'package:desafio_logica/input.dart';
 
 class Shirt {
   final int sizeP;
@@ -54,7 +40,11 @@ void main() {
   final sizeP = input(message: 'Quantidade de camisetas Tamanho P: ');
   final sizeM = input(message: 'Quantidade de camisetas Tamanho M: ');
   final sizeG = input(message: 'Quantidade de camisetas Tamanho G: ');
-  final shirts = Shirt(sizeP: sizeP, sizeM: sizeM, sizeG: sizeG);
+  final shirts = Shirt(
+    sizeP: int.parse(sizeP),
+    sizeM: int.parse(sizeM),
+    sizeG: int.parse(sizeG),
+  );
 
   print('''
     QTD de camisetas Tamanho P: ${shirts.sizeP} = R\$ ${shirts.totalSizeP}
