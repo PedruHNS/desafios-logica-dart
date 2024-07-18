@@ -21,11 +21,18 @@ class Employee {
 }
 
 void main(List<String> args) {
-  final name = input(message: 'Nome do funcionário: ');
-  final grossSalary = input(message: 'Salário bruto: ');
+  final name = input<String>(
+    message: 'Nome do funcionário: ',
+    converter: (input) => input,
+  );
+  final grossSalary = input<double>(
+    message: 'Salário bruto: ',
+    converter: double.parse,
+  );
+
   final employee = Employee(
     name: name,
-    grossSalary: double.parse(grossSalary),
+    grossSalary: grossSalary,
   );
 
   print('''

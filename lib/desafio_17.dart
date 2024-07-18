@@ -1,3 +1,10 @@
+/*
+17. Considerando que para um consórcio sabe-se o numero total de prestações, a quantidade de prestações pagas e o valor atual da prestação. Escreva um algoritmo que determine o total pago pelo consorciado e o saldo devedor.
+*/
+
+
+
+
 class Consorcio {
   final double valorParcela;
   final int parcelasPagas;

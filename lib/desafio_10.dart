@@ -37,13 +37,22 @@ class Shirt {
 }
 
 void main() {
-  final sizeP = input(message: 'Quantidade de camisetas Tamanho P: ');
-  final sizeM = input(message: 'Quantidade de camisetas Tamanho M: ');
-  final sizeG = input(message: 'Quantidade de camisetas Tamanho G: ');
+  final sizeP = input<int>(
+    message: 'Quantidade de camisetas Tamanho P: ',
+    converter: int.parse,
+  );
+  final sizeM = input<int>(
+    message: 'Quantidade de camisetas Tamanho M: ',
+    converter: int.parse,
+  );
+  final sizeG = input<int>(
+    message: 'Quantidade de camisetas Tamanho G: ',
+    converter: int.parse,
+  );
   final shirts = Shirt(
-    sizeP: int.parse(sizeP),
-    sizeM: int.parse(sizeM),
-    sizeG: int.parse(sizeG),
+    sizeP: sizeP,
+    sizeM: sizeM,
+    sizeG: sizeG,
   );
 
   print('''

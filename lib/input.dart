@@ -1,15 +1,18 @@
 import 'dart:io';
 
-String input({required String message}) {
-  String? result;
-
+T input<T>({required String message, required T Function(String) converter}) {
+  T? result;
   while (result == null) {
     print(message);
-    result = stdin.readLineSync();
+    String? userInput = stdin.readLineSync();
+    if (userInput == null || userInput.isEmpty) {
+      continue;
+    }
+    try {
+      result = converter(userInput);
+    } catch (e) {
+      print('Entrada inválida, por favor tente novamente.');
+    }
   }
-  if (result.isEmpty) {
-    return input(message: message);
-  }
-
   return result;
 }
