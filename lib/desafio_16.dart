@@ -1,3 +1,5 @@
+/*16. Crie um algoritmo para calcular o salário liquido de um funcionário, considerando que seu salário bruto incide um desconto de 8,5% de INSS para a previdência. O algoritmo deve mostrar o nome do funcionário, o seu salário bruto, o valor de desconto de INSS e o seu salário liquido. (Dica: você deve pedir (ler) o nome do funcionário e o valor do seu salário bruto). 
+*/
 import 'package:desafio_logica/input.dart';
 
 class Employee {
