@@ -1,4 +1,4 @@
-import 'package:desafio_logica/desafio25.dart';
+import 'package:desafio_logica/desafio_25.dart';
 import 'package:test/test.dart';
 
 void main() {
