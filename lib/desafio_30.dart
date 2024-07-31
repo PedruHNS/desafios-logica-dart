@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 class Aluno {
   final String ra;
   final String nome;
