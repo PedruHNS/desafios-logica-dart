@@ -4,6 +4,7 @@ class Aluno {
   final String ra;
   final String nome;
   List<double> notas;
+
   Aluno({
     required this.ra,
     required this.nome,
@@ -11,23 +12,22 @@ class Aluno {
   });
 
   double get ponderada {
+    // Ordena as notas em ordem crescente
     notas.sort();
-        
-  
 
-    var media = ((notas[2] * 4) + (notas[1] * 3) + (notas[0] * 3)) / 10;
-    media = media * 100;
-    log(notas.toString());
-    return media.roundToDouble() / 100;
+    // Calcula a média ponderada
+    double media = ((notas[2] * 4) + (notas[1] * 3) + (notas[0] * 3)) / 10;
+
+    // Arredonda a média para duas casas decimais
+    media = (media * 100).roundToDouble() / 100;
+    return media;
   }
 
-  String get status {
-    return ponderada >= 5 ? 'Aprovado' : 'Reprovado';
-  }
+  String get status => ponderada >= 5 ? 'Aprovado' : 'Reprovado';
 
   @override
   String toString() {
-    return 'Aluno(ra: $ra, nome: $nome, notas: $notas media: $ponderada status: $status)';
+    return 'Aluno(ra: $ra, nome: $nome, notas: $notas, media: $ponderada, status: $status)';
   }
 }
 
